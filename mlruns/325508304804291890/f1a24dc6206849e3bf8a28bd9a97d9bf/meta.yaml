@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/Coding/Kaggle/mlruns/325508304804291890/f1a24dc6206849e3bf8a28bd9a97d9bf/artifacts
+end_time: 1748679620275
+entry_point_name: ''
+experiment_id: '325508304804291890'
+lifecycle_stage: active
+run_id: f1a24dc6206849e3bf8a28bd9a97d9bf
+run_name: clean-fowl-826
+run_uuid: f1a24dc6206849e3bf8a28bd9a97d9bf
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748679620134
+status: 4
+tags: []
+user_id: User
