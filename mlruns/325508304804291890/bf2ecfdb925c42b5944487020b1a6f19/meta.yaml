@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/Coding/Kaggle/mlruns/325508304804291890/bf2ecfdb925c42b5944487020b1a6f19/artifacts
+end_time: 1748679290852
+entry_point_name: ''
+experiment_id: '325508304804291890'
+lifecycle_stage: active
+run_id: bf2ecfdb925c42b5944487020b1a6f19
+run_name: salty-flea-464
+run_uuid: bf2ecfdb925c42b5944487020b1a6f19
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748679290675
+status: 4
+tags: []
+user_id: User
