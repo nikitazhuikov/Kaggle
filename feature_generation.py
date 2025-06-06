@@ -1,6 +1,85 @@
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder, PolynomialFeatures
+import seaborn as sns
+import matplotlib.pyplot as plt
+from scipy.stats import chi2_contingency
+
+def analyze_difficult_answers(df):
+    # Список колонок для анализа
+    columns = [
+        'time_of_register', 'wait_time', 'near_cab', 'comfort',
+        'attitude', 'explain', 'expect', 'loyalty', 'gen_sat',
+        'diag_services_available', 'disabled_facilitites_available',
+        'region_medical_care_availabilit', 'problem_solved'
+    ]
+    
+    # Создаем матрицу для хранения результатов
+    association_matrix = pd.DataFrame(index=columns, columns=columns)
+    cramer_matrix = pd.DataFrame(index=columns, columns=columns)
+    
+    # Функция для вычисления коэффициента Крамера
+    def cramers_v(confusion_matrix):
+        chi2 = chi2_contingency(confusion_matrix)[0]
+        n = confusion_matrix.sum().sum()
+        min_dim = min(confusion_matrix.shape) - 1
+        return np.sqrt(chi2 / (n * min_dim))
+    
+    for col1 in columns:
+        for col2 in columns:
+            # Создаем таблицу сопряженности для "Затрудняюсь ответить"
+            mask1 = df[col1] == 'Затрудняюсь ответить'
+            mask2 = df[col2] == 'Затрудняюсь ответить'
+            
+            # Создаем таблицу сопряженности
+            contingency = pd.crosstab(mask1, mask2)
+            
+            # Вычисляем коэффициент Крамера
+            cramer_v = cramers_v(contingency)
+            cramer_matrix.loc[col1, col2] = cramer_v
+            
+            # Вычисляем процент совпадений
+            total = len(df)
+            both_difficult = ((mask1) & (mask2)).sum()
+            association_matrix.loc[col1, col2] = (both_difficult / total) * 100
+    
+    # Создаем тепловую карту для коэффициента Крамера
+    plt.figure(figsize=(12, 10))
+    sns.heatmap(cramer_matrix.astype(float), 
+                annot=True, 
+                cmap='YlOrRd', 
+                fmt='.2f',
+                square=True)
+    plt.title('Коэффициент Крамера между ответами "Затрудняюсь ответить"')
+    plt.xticks(rotation=45, ha='right')
+    plt.yticks(rotation=0)
+    plt.tight_layout()
+    plt.savefig('difficult_answers_cramer.png')
+    plt.close()
+    
+    # Создаем тепловую карту для процента совпадений
+    plt.figure(figsize=(12, 10))
+    sns.heatmap(association_matrix.astype(float), 
+                annot=True, 
+                cmap='YlOrRd', 
+                fmt='.1f',
+                square=True)
+    plt.title('Процент совпадений ответов "Затрудняюсь ответить" (%)')
+    plt.xticks(rotation=45, ha='right')
+    plt.yticks(rotation=0)
+    plt.tight_layout()
+    plt.savefig('difficult_answers_association.png')
+    plt.close()
+    
+    # Выводим статистику по каждому столбцу
+    print("\nСтатистика по ответам 'Затрудняюсь ответить':")
+    for col in columns:
+        difficult_count = (df[col] == 'Затрудняюсь ответить').sum()
+        total_count = len(df)
+        percentage = (difficult_count / total_count) * 100
+        print(f"{col}: {difficult_count} ({percentage:.1f}%)")
+    
+    return cramer_matrix, association_matrix
 
 def generate_features(df):
     # 1. Временные признаки
@@ -150,7 +229,7 @@ def generate_features(df):
             df[f'{col}_normalized'] = (df[col] - df[col].mean()) / df[col].std()
     
     # 15. Инвертированные бинарные признаки
-    df['problem_not_solved'] = df['problem_solved'].replace([0, 1], [1, 0])
+    df['problem_not_solved'] = df['problem_solved'].replace([0, 1], [1, 0]).fillna(-1).astype(int)
     
     return df
 
