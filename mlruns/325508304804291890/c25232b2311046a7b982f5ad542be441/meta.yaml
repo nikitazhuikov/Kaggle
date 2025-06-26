@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/User/Documents/Coding/Kaggle/mlruns/325508304804291890/c25232b2311046a7b982f5ad542be441/artifacts
+deleted_time: 1750964120153
 end_time: 1748679477220
 entry_point_name: ''
 experiment_id: '325508304804291890'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: c25232b2311046a7b982f5ad542be441
 run_name: luminous-hog-492
 run_uuid: c25232b2311046a7b982f5ad542be441

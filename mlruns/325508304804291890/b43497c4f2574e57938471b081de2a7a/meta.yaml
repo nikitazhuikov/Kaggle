@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/User/Documents/Coding/Kaggle/mlruns/325508304804291890/b43497c4f2574e57938471b081de2a7a/artifacts
+deleted_time: 1750964120171
 end_time: 1750787100629
 entry_point_name: ''
 experiment_id: '325508304804291890'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b43497c4f2574e57938471b081de2a7a
 run_name: enthused-robin-23
 run_uuid: b43497c4f2574e57938471b081de2a7a

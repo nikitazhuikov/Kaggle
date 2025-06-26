@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/User/Documents/Coding/Kaggle/mlruns/325508304804291890/5ae3bef77d074678942691a82ec4f9c3/artifacts
+deleted_time: 1750964120158
 end_time: 1748679859524
 entry_point_name: ''
 experiment_id: '325508304804291890'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 5ae3bef77d074678942691a82ec4f9c3
 run_name: upset-squirrel-181
 run_uuid: 5ae3bef77d074678942691a82ec4f9c3

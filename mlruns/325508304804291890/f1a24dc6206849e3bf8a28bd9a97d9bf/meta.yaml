@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/User/Documents/Coding/Kaggle/mlruns/325508304804291890/f1a24dc6206849e3bf8a28bd9a97d9bf/artifacts
+deleted_time: 1750964120166
 end_time: 1748679620275
 entry_point_name: ''
 experiment_id: '325508304804291890'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: f1a24dc6206849e3bf8a28bd9a97d9bf
 run_name: clean-fowl-826
 run_uuid: f1a24dc6206849e3bf8a28bd9a97d9bf

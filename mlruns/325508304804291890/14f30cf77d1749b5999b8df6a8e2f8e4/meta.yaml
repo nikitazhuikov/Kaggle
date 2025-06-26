@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/Coding/Kaggle/mlruns/325508304804291890/14f30cf77d1749b5999b8df6a8e2f8e4/artifacts
+end_time: 1750963942580
+entry_point_name: ''
+experiment_id: '325508304804291890'
+lifecycle_stage: active
+run_id: 14f30cf77d1749b5999b8df6a8e2f8e4
+run_name: merciful-ray-197
+run_uuid: 14f30cf77d1749b5999b8df6a8e2f8e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1750963763351
+status: 3
+tags: []
+user_id: User
