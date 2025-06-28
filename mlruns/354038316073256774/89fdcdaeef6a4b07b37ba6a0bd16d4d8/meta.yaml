@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/354038316073256774/89fdcdaeef6a4b07b37ba6a0bd16d4d8/artifacts
+end_time: 1751093137107
+entry_point_name: ''
+experiment_id: '354038316073256774'
+lifecycle_stage: active
+run_id: 89fdcdaeef6a4b07b37ba6a0bd16d4d8
+run_name: judicious-sow-19
+run_uuid: 89fdcdaeef6a4b07b37ba6a0bd16d4d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751093132581
+status: 4
+tags: []
+user_id: User

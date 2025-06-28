@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/661775125101643528/2475f441d64f432386942e46aa1426ca/artifacts
+end_time: 1751091818646
+entry_point_name: ''
+experiment_id: '661775125101643528'
+lifecycle_stage: active
+run_id: 2475f441d64f432386942e46aa1426ca
+run_name: knn
+run_uuid: 2475f441d64f432386942e46aa1426ca
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751091750775
+status: 3
+tags: []
+user_id: User

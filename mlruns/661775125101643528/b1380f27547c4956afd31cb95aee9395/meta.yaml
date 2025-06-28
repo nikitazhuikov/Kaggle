@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/661775125101643528/b1380f27547c4956afd31cb95aee9395/artifacts
+end_time: 1751091484637
+entry_point_name: ''
+experiment_id: '661775125101643528'
+lifecycle_stage: active
+run_id: b1380f27547c4956afd31cb95aee9395
+run_name: catboost
+run_uuid: b1380f27547c4956afd31cb95aee9395
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751091476048
+status: 3
+tags: []
+user_id: User

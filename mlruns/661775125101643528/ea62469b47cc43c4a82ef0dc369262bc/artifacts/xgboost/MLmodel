@@ -1,0 +1,63 @@
+artifact_path: xgboost
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.21.2
+model_size_bytes: 477196
+model_uuid: f4351eb444a64ddda52fece5c2bac951
+prompts: null
+run_id: ea62469b47cc43c4a82ef0dc369262bc
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "avg_satisfaction region_avg_age", "required":
+    true}, {"type": "double", "name": "staff_interaction_index region_avg_age", "required":
+    true}, {"type": "double", "name": "age avg_satisfaction", "required": true}, {"type":
+    "double", "name": "satisfaction_age_interaction", "required": true}, {"type":
+    "double", "name": "age staff_interaction_index", "required": true}, {"type": "double",
+    "name": "satisfaction_std region_avg_age", "required": true}, {"type": "double",
+    "name": "age service_quality_index", "required": true}, {"type": "double", "name":
+    "age satisfaction_std", "required": true}, {"type": "double", "name": "avg_satisfaction^2",
+    "required": true}, {"type": "double", "name": "avg_satisfaction staff_interaction_index",
+    "required": true}, {"type": "double", "name": "age region_avg_satisfaction", "required":
+    true}, {"type": "double", "name": "avg_satisfaction last_visit_months", "required":
+    true}, {"type": "double", "name": "staff_interaction_index^2", "required": true},
+    {"type": "double", "name": "last_visit_months staff_interaction_index", "required":
+    true}, {"type": "double", "name": "region_avg_satisfaction region_avg_age", "required":
+    true}, {"type": "double", "name": "region_label", "required": true}, {"type":
+    "double", "name": "year", "required": true}, {"type": "double", "name": "avg_satisfaction
+    service_quality_index", "required": true}, {"type": "double", "name": "service_quality_index
+    region_avg_age", "required": true}, {"type": "double", "name": "avg_satisfaction
+    region_avg_satisfaction", "required": true}, {"type": "double", "name": "service_quality_index
+    staff_interaction_index", "required": true}, {"type": "double", "name": "age region_avg_age",
+    "required": true}, {"type": "double", "name": "staff_interaction_index region_avg_satisfaction",
+    "required": true}, {"type": "double", "name": "loyalty", "required": true}, {"type":
+    "double", "name": "gen_sat", "required": true}, {"type": "double", "name": "accessibility_index
+    region_avg_age", "required": true}, {"type": "double", "name": "age last_visit_months",
+    "required": true}, {"type": "double", "name": "age accessibility_index", "required":
+    true}, {"type": "double", "name": "expect", "required": true}, {"type": "double",
+    "name": "last_visit_months^2", "required": true}, {"type": "double", "name": "satisfaction_std
+    service_quality_index", "required": true}, {"type": "double", "name": "satisfaction_std
+    last_visit_months", "required": true}, {"type": "double", "name": "max_ratings_count",
+    "required": true}, {"type": "double", "name": "age visit_frequency", "required":
+    true}, {"type": "double", "name": "service_quality_index^2", "required": true},
+    {"type": "double", "name": "diag_services_available_difficult", "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-28 06:17:51.393823'

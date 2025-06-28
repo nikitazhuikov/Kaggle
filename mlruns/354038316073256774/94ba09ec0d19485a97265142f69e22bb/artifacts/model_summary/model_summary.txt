@@ -1,0 +1,131 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:                    age   R-squared:                       0.999
+Model:                            OLS   Adj. R-squared:                  0.999
+Method:                 Least Squares   F-statistic:                 4.531e+06
+Date:                Sat, 28 Jun 2025   Prob (F-statistic):               0.00
+Time:                        09:48:14   Log-Likelihood:            -1.0510e+05
+No. Observations:              240000   AIC:                         2.104e+05
+Df Residuals:                  239900   BIC:                         2.114e+05
+Df Model:                          99                                         
+Covariance Type:            nonrobust                                         
+===================================================================================================================
+                                                      coef    std err          t      P>|t|      [0.025      0.975]
+-------------------------------------------------------------------------------------------------------------------
+const                                               4.7536      1.562      3.043      0.002       1.692       7.816
+year                                               -0.0015      0.001     -1.703      0.089      -0.003       0.000
+time_of_register                                    0.0246      0.047      0.525      0.600      -0.067       0.116
+wait_time                                           0.0217      0.047      0.463      0.644      -0.070       0.114
+near_cab                                            0.0215      0.047      0.458      0.647      -0.070       0.113
+comfort                                             0.0242      0.047      0.515      0.606      -0.068       0.116
+attitude                                           -0.0366      0.073     -0.504      0.614      -0.179       0.106
+explain                                            -0.0355      0.073     -0.489      0.625      -0.178       0.107
+expect                                             -0.0362      0.073     -0.497      0.619      -0.179       0.106
+loyalty                                             0.0084      0.010      0.877      0.381      -0.010       0.027
+gen_sat                                             0.0080      0.010      0.834      0.404      -0.011       0.027
+respondent_number                                4.104e-08   1.47e-07      0.280      0.780   -2.46e-07    3.29e-07
+region_medical_care_availability                    0.0070      0.009      0.746      0.455      -0.011       0.025
+time_of_register_difficult                          0.0069      0.003      2.147      0.032       0.001       0.013
+wait_time_difficult                                -0.0077      0.004     -2.133      0.033      -0.015      -0.001
+near_cab_difficult                                  0.0048      0.003      1.535      0.125      -0.001       0.011
+comfort_difficult                                   0.0074      0.003      2.595      0.009       0.002       0.013
+attitude_difficult                                  0.0055      0.003      1.855      0.064      -0.000       0.011
+explain_difficult                                   0.0051      0.003      1.752      0.080      -0.001       0.011
+expect_difficult                                   -0.0058      0.003     -1.794      0.073      -0.012       0.001
+loyalty_difficult                                   0.0016      0.003      0.475      0.635      -0.005       0.008
+gen_sat_difficult                                  -0.0039      0.003     -1.162      0.245      -0.010       0.003
+diag_services_available_difficult                  -0.0111      0.002     -5.146      0.000      -0.015      -0.007
+disabled_facilitites_available_difficult           -0.0014      0.002     -0.754      0.451      -0.005       0.002
+region_medical_care_availability_difficult          0.0110      0.003      3.279      0.001       0.004       0.018
+avg_satisfaction                                   -2.7791      0.254    -10.959      0.000      -3.276      -2.282
+satisfaction_std                                   -0.1247      0.121     -1.029      0.304      -0.362       0.113
+max_ratings_count                                   0.0016      0.002      0.975      0.329      -0.002       0.005
+min_ratings_count                                   0.0032      0.003      1.085      0.278      -0.003       0.009
+last_visit_months                                  -0.2507      0.133     -1.884      0.060      -0.511       0.010
+visit_frequency                                     2.4527      0.713      3.440      0.001       1.055       3.850
+is_urban                                           -0.0121      0.011     -1.136      0.256      -0.033       0.009
+is_male                                            -0.0837      0.009     -8.893      0.000      -0.102      -0.065
+is_state_org                                       -0.0081      0.002     -3.419      0.001      -0.013      -0.003
+has_home_visit_problem                             -0.1483      0.045     -3.324      0.001      -0.236      -0.061
+diag_available                                     -0.1555      0.044     -3.510      0.000      -0.242      -0.069
+disabled_facilities                                -0.1628      0.044     -3.694      0.000      -0.249      -0.076
+accessibility_index                                -0.1555      0.044     -3.516      0.000      -0.242      -0.069
+service_quality_index                               0.2809      0.227      1.237      0.216      -0.164       0.726
+staff_interaction_index                             1.5758      0.248      6.347      0.000       1.089       2.062
+region_respondent_count                          2.577e-07   1.52e-07      1.700      0.089   -3.94e-08    5.55e-07
+region_avg_satisfaction                             0.3338      0.259      1.289      0.197      -0.174       0.841
+region_avg_age                                      1.0012      0.030     33.423      0.000       0.942       1.060
+region_label                                     7.944e-06    3.3e-05      0.241      0.810   -5.67e-05    7.26e-05
+region_target_encoding                              0.0172      0.014      1.205      0.228      -0.011       0.045
+age^2                                            7.893e-05   2.98e-06     26.476      0.000    7.31e-05    8.48e-05
+age avg_satisfaction                               -0.0004      0.000     -2.196      0.028      -0.001   -3.94e-05
+age satisfaction_std                                0.0150      0.000     89.169      0.000       0.015       0.015
+age last_visit_months                               0.0012   1.73e-05     69.400      0.000       0.001       0.001
+age visit_frequency                                 0.0432      0.001     68.638      0.000       0.042       0.044
+age service_quality_index                           0.0027      0.000     13.456      0.000       0.002       0.003
+age staff_interaction_index                         0.0013      0.000      7.065      0.000       0.001       0.002
+age accessibility_index                             0.0035      0.000     14.525      0.000       0.003       0.004
+age region_avg_satisfaction                         0.1085      0.000    452.712      0.000       0.108       0.109
+age region_avg_age                                  0.0108   2.05e-05    527.881      0.000       0.011       0.011
+avg_satisfaction^2                                 -0.0504      0.024     -2.100      0.036      -0.097      -0.003
+avg_satisfaction satisfaction_std                   0.0336      0.019      1.789      0.074      -0.003       0.070
+avg_satisfaction last_visit_months                  0.0052      0.002      2.685      0.007       0.001       0.009
+avg_satisfaction visit_frequency                    0.0783      0.036      2.158      0.031       0.007       0.149
+avg_satisfaction service_quality_index              0.0505      0.025      2.053      0.040       0.002       0.099
+avg_satisfaction staff_interaction_index            0.0204      0.021      0.974      0.330      -0.021       0.062
+avg_satisfaction accessibility_index               -0.0495      0.023     -2.139      0.032      -0.095      -0.004
+avg_satisfaction region_avg_satisfaction            0.3162      0.037      8.568      0.000       0.244       0.389
+avg_satisfaction region_avg_age                     0.0315      0.004      8.842      0.000       0.025       0.038
+satisfaction_std^2                                  0.0062      0.008      0.758      0.449      -0.010       0.022
+satisfaction_std last_visit_months                  0.0035      0.001      3.542      0.000       0.002       0.005
+satisfaction_std visit_frequency                    0.0475      0.037      1.272      0.203      -0.026       0.121
+satisfaction_std service_quality_index              0.0049      0.011      0.447      0.655      -0.017       0.026
+satisfaction_std staff_interaction_index           -0.0187      0.010     -1.896      0.058      -0.038       0.001
+satisfaction_std accessibility_index               -0.0024      0.012     -0.192      0.847      -0.027       0.022
+satisfaction_std region_avg_satisfaction           -0.0316      0.019     -1.627      0.104      -0.070       0.006
+satisfaction_std region_avg_age                    -0.0125      0.002     -6.789      0.000      -0.016      -0.009
+last_visit_months^2                                 0.0039      0.005      0.707      0.480      -0.007       0.015
+last_visit_months visit_frequency                   0.2115      0.231      0.916      0.360      -0.241       0.664
+last_visit_months service_quality_index            -0.0011      0.001     -0.908      0.364      -0.003       0.001
+last_visit_months staff_interaction_index          -0.0021      0.001     -2.050      0.040      -0.004   -9.34e-05
+last_visit_months accessibility_index              -0.0046      0.001     -3.259      0.001      -0.007      -0.002
+last_visit_months region_avg_satisfaction           0.0197      0.002     10.580      0.000       0.016       0.023
+last_visit_months region_avg_age                 9.334e-05      0.000      0.567      0.571      -0.000       0.000
+visit_frequency^2                                   1.3031      0.371      3.512      0.000       0.576       2.030
+visit_frequency service_quality_index              -0.0247      0.044     -0.563      0.573      -0.111       0.061
+visit_frequency staff_interaction_index            -0.0897      0.039     -2.307      0.021      -0.166      -0.013
+visit_frequency accessibility_index                -0.1872      0.052     -3.580      0.000      -0.290      -0.085
+visit_frequency region_avg_satisfaction            -0.2345      0.069     -3.377      0.001      -0.371      -0.098
+visit_frequency region_avg_age                     -0.1123      0.006    -18.544      0.000      -0.124      -0.100
+service_quality_index^2                            -0.0134      0.008     -1.745      0.081      -0.028       0.002
+service_quality_index staff_interaction_index      -0.0114      0.010     -1.099      0.272      -0.032       0.009
+service_quality_index accessibility_index           0.0152      0.007      2.209      0.027       0.002       0.029
+service_quality_index region_avg_satisfaction      -0.0215      0.022     -0.969      0.333      -0.065       0.022
+service_quality_index region_avg_age               -0.0093      0.002     -4.317      0.000      -0.014      -0.005
+staff_interaction_index^2                          -0.0008      0.006     -0.129      0.897      -0.012       0.011
+staff_interaction_index accessibility_index         0.0116      0.012      0.930      0.352      -0.013       0.036
+staff_interaction_index region_avg_satisfaction    -0.1708      0.020     -8.655      0.000      -0.210      -0.132
+staff_interaction_index region_avg_age             -0.0170      0.002     -8.869      0.000      -0.021      -0.013
+accessibility_index^2                              -0.0361      0.015     -2.371      0.018      -0.066      -0.006
+accessibility_index region_avg_satisfaction         0.0635      0.027      2.332      0.020       0.010       0.117
+accessibility_index region_avg_age                  0.0076      0.003      2.887      0.004       0.002       0.013
+region_avg_satisfaction^2                          -0.0413      0.028     -1.501      0.133      -0.095       0.013
+region_avg_satisfaction region_avg_age             -0.1207      0.004    -31.195      0.000      -0.128      -0.113
+region_avg_age^2                                   -0.0108      0.000    -49.341      0.000      -0.011      -0.010
+satisfaction_age_interaction                       -0.0004      0.000     -2.196      0.028      -0.001   -3.94e-05
+satisfaction_urban_interaction                      0.0033      0.003      1.272      0.203      -0.002       0.008
+satisfaction_gender_interaction                     0.0209      0.002      9.131      0.000       0.016       0.025
+service_access_interaction                          0.0152      0.007      2.209      0.027       0.002       0.029
+visit_satisfaction_interaction                      0.0783      0.036      2.158      0.031       0.007       0.149
+random                                             -0.0017      0.001     -2.233      0.026      -0.003      -0.000
+==============================================================================
+Omnibus:                    16809.672   Durbin-Watson:                   2.001
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            88584.569
+Skew:                           0.035   Prob(JB):                         0.00
+Kurtosis:                       5.976   Cond. No.                     1.05e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 6.89e-19. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.

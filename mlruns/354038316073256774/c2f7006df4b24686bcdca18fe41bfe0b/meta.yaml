@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/354038316073256774/c2f7006df4b24686bcdca18fe41bfe0b/artifacts
+end_time: 1751093031766
+entry_point_name: ''
+experiment_id: '354038316073256774'
+lifecycle_stage: active
+run_id: c2f7006df4b24686bcdca18fe41bfe0b
+run_name: resilient-gnu-64
+run_uuid: c2f7006df4b24686bcdca18fe41bfe0b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751093027527
+status: 4
+tags: []
+user_id: User
