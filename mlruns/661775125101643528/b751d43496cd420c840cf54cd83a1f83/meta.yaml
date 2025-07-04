@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/661775125101643528/b751d43496cd420c840cf54cd83a1f83/artifacts
+end_time: 1751484817455
+entry_point_name: ''
+experiment_id: '661775125101643528'
+lifecycle_stage: active
+run_id: b751d43496cd420c840cf54cd83a1f83
+run_name: lightgbm
+run_uuid: b751d43496cd420c840cf54cd83a1f83
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751484814789
+status: 3
+tags: []
+user_id: User

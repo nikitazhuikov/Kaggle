@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/325327857451672713/32efd636b05c44d38b951ad0de0d19b5/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '325327857451672713'
+lifecycle_stage: active
+run_id: 32efd636b05c44d38b951ad0de0d19b5
+run_name: suave-lamb-188
+run_uuid: 32efd636b05c44d38b951ad0de0d19b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751473432142
+status: 1
+tags: []
+user_id: User

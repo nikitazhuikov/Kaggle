@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/325327857451672713/4d89d9fe5af3434c83a6a2c7f85285a2/artifacts
+end_time: 1751483235114
+entry_point_name: ''
+experiment_id: '325327857451672713'
+lifecycle_stage: active
+run_id: 4d89d9fe5af3434c83a6a2c7f85285a2
+run_name: awesome-cod-196
+run_uuid: 4d89d9fe5af3434c83a6a2c7f85285a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751475052185
+status: 3
+tags: []
+user_id: User

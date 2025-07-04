@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/661775125101643528/3d8e941d7bd2446aa4354bff588317f3/artifacts
+end_time: 1751484528256
+entry_point_name: ''
+experiment_id: '661775125101643528'
+lifecycle_stage: active
+run_id: 3d8e941d7bd2446aa4354bff588317f3
+run_name: adaboost
+run_uuid: 3d8e941d7bd2446aa4354bff588317f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751484476708
+status: 3
+tags: []
+user_id: User

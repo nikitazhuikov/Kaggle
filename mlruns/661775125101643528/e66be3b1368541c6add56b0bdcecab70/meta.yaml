@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/User/Documents/Coding/Kaggle/mlruns/661775125101643528/e66be3b1368541c6add56b0bdcecab70/artifacts
+end_time: 1751484809869
+entry_point_name: ''
+experiment_id: '661775125101643528'
+lifecycle_stage: active
+run_id: e66be3b1368541c6add56b0bdcecab70
+run_name: xgboost
+run_uuid: e66be3b1368541c6add56b0bdcecab70
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751484806948
+status: 3
+tags: []
+user_id: User
