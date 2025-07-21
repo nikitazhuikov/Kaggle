@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/User/Documents/Coding/Kaggle/mlruns/0/41ed5022f3cb4cdc8d8d844e7a69b0b9/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 41ed5022f3cb4cdc8d8d844e7a69b0b9
+run_name: zealous-wolf-546
+run_uuid: 41ed5022f3cb4cdc8d8d844e7a69b0b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1751662310022
+status: 1
+tags: []
+user_id: User

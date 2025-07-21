@@ -1,0 +1,38 @@
+{
+  "dataframe_split": {
+    "columns": [
+      "expect",
+      "loyalty",
+      "gen_sat",
+      "avg_satisfaction",
+      "staff_interaction_index",
+      "region_target_encoding",
+      "avg_satisfaction^2",
+      "avg_satisfaction staff_interaction_index",
+      "avg_satisfaction region_avg_satisfaction",
+      "avg_satisfaction region_avg_age",
+      "service_quality_index staff_interaction_index",
+      "staff_interaction_index^2",
+      "staff_interaction_index region_avg_satisfaction",
+      "staff_interaction_index region_avg_age"
+    ],
+    "data": [
+      [
+        4.0,
+        5.0,
+        5.0,
+        4.5,
+        4.666666666666667,
+        0.18359098716782862,
+        20.25,
+        21.0,
+        19.286565373345457,
+        200.58396483782965,
+        18.666666666666668,
+        21.777777777777782,
+        20.00088260939529,
+        208.0130005725641
+      ]
+    ]
+  }
+}

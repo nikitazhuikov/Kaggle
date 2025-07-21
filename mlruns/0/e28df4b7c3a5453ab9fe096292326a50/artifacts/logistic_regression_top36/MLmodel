@@ -1,0 +1,44 @@
+artifact_path: logistic_regression_top36
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+is_signature_from_type_hint: false
+mlflow_version: 2.21.2
+model_size_bytes: 2885
+model_uuid: aa6c07c7818545aebcb62ce313445fce
+prompts: null
+run_id: e28df4b7c3a5453ab9fe096292326a50
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "expect", "required": true}, {"type": "double",
+    "name": "loyalty", "required": true}, {"type": "double", "name": "gen_sat", "required":
+    true}, {"type": "double", "name": "avg_satisfaction", "required": true}, {"type":
+    "double", "name": "staff_interaction_index", "required": true}, {"type": "double",
+    "name": "region_target_encoding", "required": true}, {"type": "double", "name":
+    "avg_satisfaction^2", "required": true}, {"type": "double", "name": "avg_satisfaction
+    staff_interaction_index", "required": true}, {"type": "double", "name": "avg_satisfaction
+    region_avg_satisfaction", "required": true}, {"type": "double", "name": "avg_satisfaction
+    region_avg_age", "required": true}, {"type": "double", "name": "service_quality_index
+    staff_interaction_index", "required": true}, {"type": "double", "name": "staff_interaction_index^2",
+    "required": true}, {"type": "double", "name": "staff_interaction_index region_avg_satisfaction",
+    "required": true}, {"type": "double", "name": "staff_interaction_index region_avg_age",
+    "required": true}]'
+  outputs: '[{"type": "long", "required": true}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-07-12 06:08:11.090257'
